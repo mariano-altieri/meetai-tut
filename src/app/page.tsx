@@ -44,18 +44,21 @@ export default function Home() {
           placeholder="Name"
           value={name}
           onChange={e => setName(e.target.value)}
+          autoComplete="username"
         />
         <Input
           type="email"
           placeholder="Email"
           value={email}
           onChange={e => setEmail(e.target.value)}
+          autoComplete="email"
         />
         <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={e => setPassword(e.target.value)}
+          autoComplete="new-password"
         />
         <Button type="submit">Create user</Button>
       </form>
@@ -68,12 +71,14 @@ export default function Home() {
           placeholder="Email"
           value={email}
           onChange={e => setEmail(e.target.value)}
+          autoComplete="email"
         />
         <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={e => setPassword(e.target.value)}
+          autoComplete="current-password"
         />
         <Button type="submit">Sign in</Button>
       </form>
